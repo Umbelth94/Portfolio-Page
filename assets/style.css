@@ -82,32 +82,45 @@ section p{
 
 /* Let's make some CARDS broh */
 #my-work{
+    margin-left:5%;
+    margin-right:5%;
     display:flex;
     flex-direction:column;
-    /* align-items:center; */
+    align-items:center;
+    flex-wrap:wrap;
 }
 
-#my-work h2{
-    
-}
 .primary-card{
     /* text-align:center; */
     position:relative;
-    width:80%;
-    display:inline-block;
-    margin-left:auto;
-    margin-right:auto;
+    width:100%;
+    /* display:inline-block; */
+    /* margin-left:auto;
+    margin-right:auto; */
 }
 
 #my-work img{
     opacity:.65;
     border:solid var(--powder-blue) .5rem;
+    background-size:cover;
 }
 
-.primary-card figcaption{
+/*Setting two columns*/
+.row{
+    display:flex;
+    justify-content:space-around;
+    /* flex-wrap:wrap; */
+}
+.card figcaption{
     background-color:var(--powder-blue);
     position:absolute;
     /* Keep these as percentages so that they scale correctly with the image*/
     bottom:3%;
     left:1%;
+}
+
+.secondary-card{
+    /* margin:.8rem; */
+    position:relative;
+    width:40%;
 }
