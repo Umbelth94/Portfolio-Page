@@ -1,0 +1,75 @@
+/* Focus on mobile styling first, then work up to styling the desktop*/
+:root{
+    --dim-gray:#656565;
+    --powder-blue:#81b0e2;
+    --platinum:#D8DBE2;
+    --russian-violet:#322b60;
+    --chocolate-cosmos:#410B13;
+
+}
+
+html{
+    font-size:62.5%;
+    /*Changes a default 16px font size to 10px*/
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    /* text-align:center; */
+}
+
+header{
+    width:100%;
+    background-color:var(--dim-gray);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+header h1{
+    background-color:var(--powder-blue);
+    color:var(--dim-gray);
+    text-align:center;
+    font-size:2.5rem;
+    width:35%;
+    margin-top:5px;
+}
+
+header nav {
+    width:100%;
+    text-align:center;
+}
+header li{
+    text-decoration:underline;
+    font-size:1.4rem;
+    padding:.7rem;
+    /* margin:.7rem; */
+    color:var(--powder-blue);
+    border:1px solid rgb(118, 116, 116);
+}
+
+#about-me img{
+    background-color:black;
+    width:200px;
+    height:200px;
+}
+
+section{
+    margin:1.5rem 1.7rem 1.5rem 1.7rem;;
+}
+
+section h2{
+    color:var(--russian-violet);
+    text-align:center;
+    font-size:2rem;
+    border-bottom:2px solid;
+    margin-bottom:1rem;
+    padding-bottom:.5rem;
+}
+
+section p{
+    color:var(--russian-violet);
+    font-size:1.5rem;
+    text-align:center;
+}
