@@ -19,6 +19,14 @@ body{
     /* text-align:center; */
 }
 
+/*Allign all non-card related text to center*/
+header h1,
+header nav,
+section h2,
+section p{
+    text-align:center;
+}
+
 header{
     width:100%;
     background-color:var(--dim-gray);
@@ -30,7 +38,6 @@ header{
 header h1{
     background-color:var(--powder-blue);
     color:var(--dim-gray);
-    text-align:center;
     font-size:2.5rem;
     width:35%;
     margin-top:5px;
@@ -38,8 +45,8 @@ header h1{
 
 header nav {
     width:100%;
-    text-align:center;
 }
+
 header li{
     text-decoration:underline;
     font-size:1.4rem;
@@ -49,6 +56,7 @@ header li{
     border:1px solid rgb(118, 116, 116);
 }
 
+/*About me section*/ 
 #about-me img{
     background-color:black;
     width:200px;
@@ -61,7 +69,6 @@ section{
 
 section h2{
     color:var(--russian-violet);
-    text-align:center;
     font-size:2rem;
     border-bottom:2px solid;
     margin-bottom:1rem;
@@ -71,5 +78,36 @@ section h2{
 section p{
     color:var(--russian-violet);
     font-size:1.5rem;
-    text-align:center;
+}
+
+/* Let's make some CARDS broh */
+#my-work{
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+}
+
+#my-work h2{
+    
+}
+.primary-card{
+    /* text-align:center; */
+    position:relative;
+    width:80%;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#my-work img{
+    opacity:.65;
+    border:solid var(--powder-blue) .5rem;
+}
+
+.primary-card figcaption{
+    background-color:var(--powder-blue);
+    position:absolute;
+    /* Keep these as percentages so that they scale correctly with the image*/
+    bottom:3%;
+    left:1%;
 }
