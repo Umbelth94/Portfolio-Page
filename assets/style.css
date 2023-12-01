@@ -82,15 +82,16 @@ section p{
 
 /* Let's make some CARDS broh */
 #my-work{
-    margin-left:5%;
-    margin-right:5%;
+    /* margin-left:5%;
+    margin-right:5%; */
     display:flex;
     flex-direction:column;
-    align-items:center;
+    /* align-items:center; */
     flex-wrap:wrap;
 }
 
-.primary-card{
+.primary-card,
+.secondary-card{
     /* text-align:center; */
     position:relative;
     width:100%;
@@ -109,7 +110,7 @@ section p{
 .row{
     display:flex;
     justify-content:space-around;
-    /* flex-wrap:wrap; */
+    flex-wrap:wrap;
 }
 .card figcaption{
     background-color:var(--powder-blue);
@@ -120,7 +121,6 @@ section p{
 }
 
 .secondary-card{
-    /* margin:.8rem; */
     position:relative;
-    width:40%;
+    width:100%;
 }
