@@ -111,7 +111,7 @@ section p{
 .row{
     display:flex;
     justify-content:space-between;
-    /* flex-wrap:wrap; */
+    flex-wrap:wrap;
 }
 .card figcaption{
     background-color:var(--powder-blue);
@@ -123,5 +123,19 @@ section p{
 
 .secondary-card{
     position:relative;
-    width:45%;
+    width:48%;
+}
+
+@media screen and (max-width: 425px){
+    .row{
+        justify-content:center;
+    }
+    
+    .secondary-card{
+        width:95%;
+    }
+
+    section{
+        margin:1.4rem 2rem;
+    }
 }
