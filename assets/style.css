@@ -126,6 +126,11 @@ section p{
     width:48%;
 }
 
+#contact-me a{
+    font-size:2.5rem;
+    color:var(--powder-blue)
+}
+
 /*Screen for mobile*/
 @media screen and (max-width: 425px){
     .row{
@@ -141,6 +146,8 @@ section p{
     }
 }
 
+
+/*DESKTOP OR HIGHER*/
 @media screen and (min-width:1024px){
     header,
     header nav
