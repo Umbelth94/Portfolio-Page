@@ -126,6 +126,7 @@ section p{
     width:48%;
 }
 
+/*Screen for mobile*/
 @media screen and (max-width: 425px){
     .row{
         justify-content:center;
@@ -137,5 +138,39 @@ section p{
 
     section{
         margin:1.4rem 2rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    header,
+    header nav
+    ul
+    {
+        display:flex;
+        flex-direction:row;
+    }
+
+    header{
+        height:5rem;
+        align-items:center;
+    }
+
+    header h1{
+        width:15%;
+        font-size:3rem;
+    }
+
+    header a{
+        font-size:2.5rem;
+    }
+
+    ul{
+        justify-content:right;
+    }
+
+    header li{
+        margin-left:18%;
+        border:0;
+        margin-right:2%;
     }
 }
