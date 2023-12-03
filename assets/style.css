@@ -233,7 +233,8 @@ figcaption p{
     header nav
     ul,
     section,
-    #my-work
+    #my-work,
+    #about-me .content-container
     {
         display:flex;
         flex-direction:row;
@@ -268,18 +269,11 @@ figcaption p{
         margin-right:2rem;
         height:100%;
     }
+    
     .title-container{
         width:15%;;
         flex-shrink:0;
         margin-right:3%;
-    }
-
-    #about-me .content-container{
-        flex-direction:row;
-    }
-
-    .content-container{
-        flex-grow:0;
     }
 
     .primary-card{
@@ -303,7 +297,7 @@ figcaption p{
 }
 
 /*This just handles the contact info in the awkward scaling that happens with the text before the rest of the page's content reacts to further scaling*/
-@media screen and (max-width: 643px){
+@media screen and (max-width: 650px){
     #contact-me .content-container{
         flex-direction:column;
         align-items:center;
