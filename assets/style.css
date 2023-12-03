@@ -120,13 +120,18 @@ section p{
     transition: 0.3s;
 }
 
-#my-work img:hover{
+#my-work img:hover,
+.card figcaption:hover{
     opacity:1;
     cursor:pointer;
-    box-shadow: 0px 0px 56px 7px rgba(32,147,224,0.75);
+    box-shadow: 0px 0px 56px 7px rgba(5, 74, 111, 0.75);
+    transform:scale(1.01);
 
 }
 
+.card figcaption:hover{
+    transform: scale(1.2);
+}
 
 /*Setting two columns*/
 .row{
@@ -141,7 +146,9 @@ section p{
     /* Keep these as percentages so that they scale correctly with the image*/
     bottom:6%;
     left:.5%;
+    transition:.2s;
 }
+
 
 figcaption h3{
     text-align:left;
@@ -292,5 +299,17 @@ figcaption p{
 
     #my-work{
         flex-wrap:nowrap;
+    }
+}
+
+/*This just handles the contact info in the awkward scaling that happens with the text before the rest of the page's content reacts to further scaling*/
+@media screen and (max-width: 643px){
+    #contact-me .content-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #contact-me a {
+        margin-bottom:1rem;
     }
 }
