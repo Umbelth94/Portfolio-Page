@@ -113,9 +113,13 @@ section p{
 #my-work img{
     opacity:.65;
     border:solid var(--powder-blue) .5rem;
-    background-size:cover;
+    /* background-size:cover; */
     flex-shrink:none;
-    
+    transition: 0.3s;
+}
+
+#my-work img:hover{
+    opacity:1;
 }
 
 
@@ -136,12 +140,12 @@ section p{
 
 figcaption h3{
     text-align:left;
-    font-size:2.4rem;
+    font-size:1.6rem;
     font-style:bold;
 }
 
 figcaption p{
-    font-size:1.5rem;
+    font-size:.8rem;
     text-align:left;
 }
 
@@ -179,15 +183,13 @@ figcaption p{
         align-items:center;
     }
 
-    #contact-me ul{
+    #contact-me .content-container{
         display:flex;
         align-items:center;
     }
 
-    ul{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:nowrap;
+    #contact-me a {
+        margin-bottom:.5rem;
     }
 
     #about-me img {
@@ -261,6 +263,17 @@ figcaption p{
 
     .primary-card{
         width:100%;
+    }
+
+    figcaption h3{
+        text-align:left;
+        font-size:2.4rem;
+        font-style:bold;
+    }
+    
+    figcaption p{
+        font-size:1.5rem;
+        text-align:left;
     }
 
     #my-work{
