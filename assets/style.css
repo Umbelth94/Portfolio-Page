@@ -1,6 +1,6 @@
 /* Focus on mobile styling first, then work up to styling the desktop*/
 :root{
-    --dim-gray:#656565;
+    --dim-gray:#343232;
     --powder-blue:#81b0e2;
     --light-blue:rgb(224, 235, 247);
     --platinum:#D8DBE2;
@@ -58,6 +58,27 @@ header li{
     color:var(--powder-blue);
     border:1px solid rgb(118, 116, 116);
 }
+
+#banner-picture{
+    position:relative;
+    width:100%;
+    height:20rem;
+    background-image: url(./blue-paint-wall-background-texture.jpg);
+    border-bottom:.5rem solid var(--dim-gray);
+    background-position:center;
+}
+
+#banner-picture h2{
+    background-color:var(--powder-blue);
+    color:var(--dim-gray);
+    position:absolute;
+    font-size:3rem;
+    padding:1rem;
+    right:7%;
+    bottom:25%;
+}
+
+
 
 /*About me section*/ 
 #about-me img{
@@ -241,7 +262,7 @@ figcaption p{
     }
 
     header{
-        height:6rem;
+        height:7rem;
         align-items:center;
     }
 
@@ -269,7 +290,7 @@ figcaption p{
         margin-right:2rem;
         height:100%;
     }
-    
+
     .title-container{
         width:15%;;
         flex-shrink:0;
