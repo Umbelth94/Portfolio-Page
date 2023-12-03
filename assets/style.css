@@ -2,6 +2,7 @@
 :root{
     --dim-gray:#656565;
     --powder-blue:#81b0e2;
+    --light-blue:rgb(224, 235, 247);
     --platinum:#D8DBE2;
     --russian-violet:#322b60;
     --chocolate-cosmos:#410B13;
@@ -14,6 +15,7 @@ html{
 }
 
 body{
+    background-color:var(--light-blue);
     display:flex;
     flex-direction:column;
     /* text-align:center; */
@@ -120,6 +122,7 @@ section p{
 
 #my-work img:hover{
     opacity:1;
+    cursor:pointer;
 }
 
 
