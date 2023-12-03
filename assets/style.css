@@ -128,9 +128,21 @@ section p{
 .card figcaption{
     background-color:var(--powder-blue);
     position:absolute;
+    padding:1rem;
     /* Keep these as percentages so that they scale correctly with the image*/
-    bottom:3%;
-    left:1%;
+    bottom:6%;
+    left:.5%;
+}
+
+figcaption h3{
+    text-align:left;
+    font-size:2.4rem;
+    font-style:bold;
+}
+
+figcaption p{
+    font-size:1.5rem;
+    text-align:left;
 }
 
 .secondary-card{
