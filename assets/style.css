@@ -23,7 +23,8 @@ body{
 header h1,
 header nav,
 section h2,
-section p{
+section p 
+{
     text-align:center;
 }
 
@@ -38,8 +39,8 @@ header{
 header h1{
     background-color:var(--powder-blue);
     color:var(--dim-gray);
-    font-size:2.7rem;
-    width:35%;
+    font-size:4rem;
+    width:40rem;
     margin-top:5px;
 }
 
@@ -59,8 +60,16 @@ header li{
 /*About me section*/ 
 #about-me img{
     background-color:black;
-    width:200px;
-    height:200px;
+    width:175px;
+    border:var(--powder-blue) solid .5rem;
+    margin:2% 0;
+}
+
+
+#about-me .content-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 section{
@@ -77,7 +86,7 @@ section h2{
 
 section p{
     color:var(--russian-violet);
-    font-size:1.5rem;
+    font-size:2.2rem;
 }
 
 /* Let's make some CARDS broh */
@@ -95,7 +104,7 @@ section p{
     /* text-align:center; */
     position:relative;
     width:100%;
-    margin-top:1.5rem
+    margin-bottom:1.5rem;
     /* display:inline-block; */
     /* margin-left:auto;
     margin-right:auto; */
@@ -105,7 +114,10 @@ section p{
     opacity:.65;
     border:solid var(--powder-blue) .5rem;
     background-size:cover;
+    flex-shrink:none;
+    
 }
+
 
 /*Setting two columns*/
 .row{
@@ -126,15 +138,48 @@ section p{
     width:48%;
 }
 
+#contact-me ul{
+    display:flex;
+    justify-content:space-between;
+    
+}
+
 #contact-me a{
     font-size:2.5rem;
-    color:var(--powder-blue)
+    color:var(--powder-blue);
+    text-decoration:underline;
 }
 
 /*Screen for mobile*/
 @media screen and (max-width: 425px){
     .row{
         justify-content:center;
+    }
+
+    header h1{
+        font-size: 3rem;
+        text-wrap:nowrap;
+        width:100%;
+    }
+
+    .content-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #contact-me ul{
+        display:flex;
+        align-items:center;
+    }
+
+    ul{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+
+    #about-me img {
+        margin: 5% 0;
     }
     
     .secondary-card{
@@ -164,11 +209,6 @@ section p{
         align-items:center;
     }
 
-    header h1{
-        width:30%;
-        font-size:4rem;
-    }
-
     header a{
         font-size:2.5rem;
     }
@@ -183,6 +223,10 @@ section p{
         margin-right:1%;
     }
 
+    #about-me img {
+        margin-right: 2%;
+    }
+
     section h2{
         border-bottom:0;
         border-right:1px solid black;
@@ -195,6 +239,10 @@ section p{
         margin-right:3%;
     }
 
+    #about-me .content-container{
+        flex-direction:row;
+    }
+
     .content-container{
         flex-grow:0;
     }
@@ -205,5 +253,15 @@ section p{
 
     #my-work{
         flex-wrap:nowrap;
+    }
+
+    #contact-me{
+        justify-content:space-between;
+    }
+
+    #contact-me .content-container{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
     }
 }
