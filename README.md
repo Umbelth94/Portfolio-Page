@@ -11,9 +11,10 @@ The page was based around a mockup for the assignment, so my color scheme, layou
 
 For the background image, I used [This image](https://www.freepik.com/free-photo/blue-paint-wall-background-texture_2791913.htm?query=texture%20background#from_view=detail_alsolike)
 
+For the projects themselves, I created those on my self-taught journey through [The Odin Project](https://www.theodinproject.com/)
+
 For the profile picture, I just used my face!  
 
-For the projects themselves, I created those on my self-taught journey through [The Odin Project](https://www.theodinproject.com/)
 
 ## Future Goals
 - Update this as I build more portfolio-worthy projects
