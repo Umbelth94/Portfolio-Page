@@ -20,3 +20,4 @@ For the profile picture, I just used my face!
 ## Future Goals
 - Update this as I build more portfolio-worthy projects
 - Make a LinkedIn and Resume for the links to actually link to (They are just placeholders for now)
+- Add icons to the Contact links 
